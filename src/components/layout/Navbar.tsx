@@ -21,7 +21,7 @@ export default function Navbar() {
       <div className="w-full px-8 h-16">
         <div className="flex h-full items-center justify-between">
           <div className="flex items-center flex-1 gap-4">
-            <div className="relative w-full max-w-md">
+            <div className="auto-width-container relative w-full max-w-md">
               <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
               <Input
                 type="search"

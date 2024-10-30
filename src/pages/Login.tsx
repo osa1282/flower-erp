@@ -35,19 +35,19 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <Card className="w-[400px]">
-        <CardHeader className="text-center">
-          <div className="flex justify-center mb-4">
+    <div className="h-screen w-full flex items-center justify-center bg-background p-4">
+      <Card className="w-full mx-auto">
+        <CardHeader className="text-center space-y-2">
+          <div className="flex justify-center">
             <Flower2 className="h-12 w-12 text-primary" />
           </div>
-          <CardTitle className="text-2xl">Witaj w Kwiaciarni</CardTitle>
-          <CardDescription>
+          <CardTitle className="text-2xl sm:text-3xl">Witaj w Kwiaciarni</CardTitle>
+          <CardDescription className="text-sm sm:text-base">
             Zaloguj się, aby uzyskać dostęp do panelu
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form onSubmit={handleSubmit} className="space-y-6">
             <div className="space-y-2">
               <Input
                 type="text"
